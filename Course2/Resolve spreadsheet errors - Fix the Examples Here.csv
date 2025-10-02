@@ -1,0 +1,11 @@
+Item,Quantity Sold,Price,,Expected Error,Formula to Produce Error,Error Message,Notes
+Apple,100,0.5,,,,,
+Banana,50,0.3,,VALUE Error,=B3*C3,15,
+Orange,50,0.9,,Error,=SUM(B2 B3),150,
+Grapes,10,0.8,,DIV Error,=C5/B5,0.08,
+Peach,30,0.6,,NAME Error,"=SUMM(B6,C6)",30.6,
+Pear,40,0.7,,N/A Error,"""=VLOOKUP(""Apples"", A2:B5, 2, FALSE)""",100,
+Plum,20,text,,NUM Error,=SQRT(-16),4,
+Cherry,10,0.9,,REF Error,=#REF!+B3,150,*This will happen if you delete a column
+Mango,25,1,,,,,
+Pineapple,15,1.2,,,,,
